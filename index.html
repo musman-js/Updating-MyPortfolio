@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usman | Portfolio</title>
+  <!-- title bar icon -->
+  <link rel="icon" href="project/icon.png" type="image/x-icon">
+  <!-- firebase link -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+  <!-- Bootstrap Css Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Custom Css Link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Animate Css Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Sweet alert link -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Inter:wght@500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body style="background-color: black;">
+
+
+
+  <!-- ========Section Navbar======= -->
+  <nav class="navbar navbar-expand-lg mynavbar">
+    <div class="container">
+      <!-- my name -->
+      <a class="navbar-brand" href="#home">Muhammad <span class="navbar-span">Usman</span> </a>
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" id="toggleButton" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#navbarNav">
+        <div class="navbar-toggler-main">
+          <span class="navbar-toggler-line"></span>
+          <span class="navbar-toggler-line"></span>
+          <span class="navbar-toggler-line"></span>
+        </div>
+      </button>
+      <!-- Offcanvas Navigation Links -->
+      <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <span class="close-span"><i class="fa-solid fa-xmark cross-span"></i></span>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav lists">
+            <li class="nav-item list">
+              <a class="nav-link navlink-home" href="#Home">
+                &nbsp;HOME</a>
+            </li>
+            <li class="nav-item list">
+              <a class="nav-link" href="#about"> &nbsp;ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project"> &nbsp;PROJECT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                &nbsp;CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- ======Section 1====== -->
+  <section id="Home">
+    <div class="sec-1-main">
+      <div class="container">
+        <div class="">
+          <div class="">
+            <div class="sec-1">
+              <div>
+                <h3 class="animate__animated animate__backInUp">Hello Guys! I'am</h3>
+              </div>
+              <div>
+                <h1 class="animate__animated animate__backInUp">Muhammad Usman.</h1>
+              </div>
+              <div>
+                <h2 class="animate__animated animate__backInUp">Frontend Developer.🖥️</h2>
+                <h2 class="animate__animated animate__backInUp">Exploring Flutter.🚀</h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-md-6 col-sm-12">
+            <img class="coding-gif" src="background-images/coding-gif.gif" alt="coding-gif" width="100%">
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ======Section 2===== -->
+  <section id="about">
+    <div class="sec-2-main">
+      <div class="container">
+        <div class="sec-2">
+          <h2 class="">About</h2>
+        </div>
+        <div class="sec-2-para">
+          <p>Hello, I'm Muhammad Usman Khan, a dedicated Frontend Developer with a passion for creating engaging and
+            user-friendly web experiences. My journey into the world of web development began with comprehensive
+            training at Jawaan Pakistan, where I honed my skills in HTML, CSS3, JavaScript, Bootstrap, Tailwind Css, Git, Github, Firebase.Currently, I am expanding my skill set into mobile application development, particularly focusing on Flutter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ======Section 3====== -->
+  <div class="container" id="hobbies">
+    <div class="sec-2">
+      <h2 class="sec-3-heading">Hobbies</h2>
+    </div>
+
+    <div>
+      <div class="sec-6-para">
+        <h3 class="sec-6-h3">Apart of Programming</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <p class="sec-6-para mt-4" style="font-family: 'Inter', sans-serif; font-weight: 400;">My interests extend to
+            exploring new destinations and immersing myself in different
+            cultures through travel. Additionally, I find enjoyment in gaming, where I engage in various virtual worlds
+            to unwind and challenge my strategic thinking.</p>
+          <p class="sec-6-para hobbies"><span style="font-size: 24px;">👉</span> Travelling</p>
+          <p class="sec-6-para hobbies "><span style="font-size: 24px;">👉</span> Gaming</p>
+
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <img class="hobbies-gif" src="project/hobbies-gif.png" alt="hobbies-gif">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ======Section 4===== -->
+  <section>
+    <div class="sec-2-main" id="skills">
+      <div class="container">
+        <div class="sec-2">
+          <h2 style="margin-top: 40px;"> My Skills:</h2>
+
+          <!-- progress bar -->
+          <div class="skills-container">
+            <div class="skill-bar">
+              <div class="skill-label">HTML</div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 95%;"></div>
+              </div>
+              <span style="color: #c7c1c1;">95%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-label skill-margin">CSS</div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+              <span style="color: #c7c1c1;">90%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-label skill-margin">Bootstrap</div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 87%;"></div>
+              </div>
+              <span style="color: #c7c1c1;">87%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-label skill-margin">Tailwind CSS</div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 60%;">
+                </div>
+              </div>
+              <span style="color: #c7c1c1;">60%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-label skill-margin">JavaScript</div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%;">
+                </div>
+              </div>
+              <span style="color: #c7c1c1;">75%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-label skill-margin">Firebase</div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%;">
+                </div>
+              </div>
+              <span style="color: #c7c1c1;">85%</span>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+
+
+  <!-- ======Section 5====== -->
+  <section id="project">
+    <div class="container mb-5">
+      <div class="sec-2">
+        <h2 class="sec-2-heading text-center">PORTFOLIO</h2>
+        <p class="sec-6-para text-center" style="font-size: 19px; font-weight: 500;">Some of my latest Projects are</p>
+      </div>
+
+      <div class="sec-2-project-main">
+        <div class="myborder animate__animated animate__backInLeft">
+          <div class="card-main">
+            <div class="text-center">
+              <img src="project/sunshine.png" class="card-img-top" alt="sunshine">
+              <div class="card-body">
+                <h5 class="card-title">Sunshine Exhaust</h5>
+                <p class="card-text " style="text-align: left;">My portfolio features a project I
+                  developed
+                  as the Final Major Project (FMP) for Jawaan Pakistan. I created a comprehensive
+                  website
+                  dedicated to exhaust fans. This project aimed to showcase various exhaust fan.</p>
+                <a href="https://github.com/musman-js/Client-Project-Second-Design.git" target="_blank"
+                  class=" card-btn"><i class="fa-brands fa-github icons">&nbsp;&nbsp;</i><span id="btn-link">Github
+                    Link</span></a>
+                <a id="live-Demo" href="https://client-project-1bc17.web.app/" class=" card-btn" target="_blank"><i
+                    class="fa-solid fa-laptop">&nbsp;</i><span id="btn-link">Live
+                    Demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="myborder second-card animate__animated animate__backInRight">
+          <div class="card-main">
+            <div class="text-center">
+              <img src="project/portfolio-image.png" class="card-img-top" alt="todo-app">
+              <div class="card-body">
+                <h5 class="card-title">Old Portfolio</h5>
+                <p class="card-text" style="text-align: left;">This project showcases an old portfolio created as a
+                  class assignment, which was recognized as the best portfolio among peers by the instructor. Crafted
+                  with dedication, this portfolio exemplifies a high standard presentation.</p>
+                <a href="https://github.com/musman-js/Complete-Portfolio" class=" card-btn" target="_blank"><i
+                    class="fa-brands fa-github icons">&nbsp;&nbsp;</i><span id="btn-link">Github Link</span></a>
+                <a id="live-Demo" href="https://musman-js.web.app/" class=" card-btn" target="_blank"><i
+                    class="fa-solid fa-laptop"></i>
+                  &nbsp;<span id="btn-link">Live
+                    Demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ======Section 6====== -->
+  <section class="sec-3-main">
+    <div class="container mb-5">
+      <div class=" sec-2-project-main">
+        <div class="myborder animate__animated animate__backInLeft">
+          <div class="card-main">
+            <div class="text-center">
+              <img src="project/quizapp.png" class="card-img-top" alt="quiz-app">
+              <div class="card-body">
+                <h5 class="card-title">Quiz App</h5>
+                <p class="card-text sunshine-text" style="text-align: left;">My portfolio highlights a
+                  significant
+                  project I undertook as part of a class assignment. I crafted a
+                  compelling quiz application that not only demonstrates my proficiency in front-end
+                  development but also underscores my ability to integrate Firebase as a database
+                  solution.</p>
+                <a href="https://github.com/musman-js/QuizApp-With-FirebaseDatabase.git" class=" card-btn"
+                  target="_blank"><i class="fa-brands fa-github icons">&nbsp;&nbsp;</i><span id="btn-link">Github
+                    Link</span></a>
+                <a id="live-Demo" href="https://quiz-app-24721.web.app/" class=" card-btn" target="_blank"
+                  id="card-btn"><i class="fa-solid fa-laptop"></i> &nbsp;<span id="btn-link">Live
+                    Demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="myborder second-card animate__animated animate__backInRight">
+          <div class="card-main">
+            <div class="text-center">
+              <img src="project/foodies-app.png" class="card-img-top" alt="foodies-app">
+              <div class="card-body">
+                <h5 class="card-title todo-title  foodies-title">Foodies App Clone</h5>
+                <p class="card-text  sunshine-text" style="text-align: left;">As part of my personal
+                  development journey, I crafted a Foodies App clone for self-practice,acquiring
+                  valuable insights and honing my skills in the process. This project not only served
+                  as a hands-on learning experience but also showcased my dedication to expanding my
+                  proficiency.</p>
+                <a href="https://github.com/musman-js/foodies.app.git" class=" card-btn" target="_blank"><i
+                    class="fa-brands fa-github icons">&nbsp;&nbsp;</i><span id="btn-link">Github Link</span></a>
+                <a id="live-Demo" href="https://foodies-279dc.web.app/" class=" card-btn" target="_blank"><i
+                    class="fa-solid fa-laptop"></i> &nbsp;<span id="btn-link">Live
+                    Demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" sec-2-project-main">
+        <div class="myborder todo-project animate__animated animate__backInLeft ">
+          <div class="card-main ">
+            <div class="text-center">
+              <img src="project/todoapp.png" class="card-img-top todo-img" alt="quiz-app">
+              <div class="card-body">
+                <h5 class="card-title todo-heading">Todo App</h5>
+                <p class="card-text todo-text " style="text-align: left;">In a notable class assignment, I took on
+                  the development of an impeccably designed Todo App,showcasing my adeptness in web
+                  development. Utilizing Firebase as an advanced database solution.</p>
+                <a href="https://github.com/musman-js/TodoApp-With-Firebase-Database.git" class=" card-btn"
+                  target="_blank"><i class="fa-brands fa-github icons">&nbsp;&nbsp;</i><span id="btn-link">Github
+                    Link</span></a>
+                <a id="live-Demo" href="https://todo-app-6ccde.web.app/" class=" card-btn" target="_blank"
+                  id="card-btn"><i class="fa-solid fa-laptop"></i> &nbsp;<span id="btn-link">Live
+                    Demo</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ======Section 7====== -->
+  <section id="contact">
+    <div class="container">
+      <div class="sec-2 mt-5">
+        <h2 class="sec-3-heading" style="margin-top: 40px;">Contact Me:</h2>
+      </div>
+
+      <main id="sec-2">
+        <div>
+          <div class="contact-sec-2">
+            <h5>Phone Number:</h5>
+            <p>+92 319 7344951</p>
+          </div>
+          <hr style="border: 2px solid #67ff00;">
+        </div>
+        <div>
+          <div class="contact-sec-2">
+            <h5>Email:</h5>
+            <p>usman2037966@gmail.com</p>
+          </div>
+          <hr style="border:2px solid #67ff00;">
+        </div>
+        <div>
+          <div class="contact-sec-2">
+            <h5>Location:</h5>
+            <p>Karachi , Pakistan </p>
+          </div>
+          <hr style="border: 2px solid #67ff00;">
+        </div>
+
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/profile.php?id=100063423567314" target="_blank"><i
+              class="fa-brands fa-facebook icons " style="color: #1d73ca;"></i><span class="line"></span></a>
+          <a id="contact-link" href="https://www.instagram.com/usman.___here/?hl=en" target="_blank"><i
+              class=" fa-brands fa-instagram icons insta" style="color: red;"></i><span class="line"></span></a>
+          <a id="contact-link" href="https://www.linkedin.com/in/musmanjs/" target="_blank"><i
+              class="fa-brands fa-linkedin icons linkedin" style="color: #1d73ca;"></i><span class="line"></span></a>
+          <a id="contact-link" href="https://github.com/musman-js" target="_blank"><i
+              class="fa-brands fa-github icons github"></i></a>
+        </div>
+    </div>
+    </main>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ======Section 8====== -->
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <div class="sec-2 mt-5">
+          <h2 class="sec-3-heading mt-5 ">Send Me a Message</h2>
+        </div>
+      </div>
+
+      <main class="text-center">
+        <div class="sec-3-input">
+          <input type="text" placeholder="Enter name" id="name">
+          <input type="email" placeholder="Enter email" id="email">
+        </div>
+        <div>
+          <textarea id="message" class="sec-3-textarea" placeholder="Enter Message..."></textarea>
+        </div>
+        <div class="sec-3-btn">
+          <button onclick="getValue()">Submit</button>
+        </div>
+      </main>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- =====Footer===== -->
+  <footer>
+    <section class="footer-main">
+      <div class="container">
+        <!-- display flex and block -->
+        <div class="footer-design">
+          <div class="footer-icons animate__animated animate__bounceInLeft">
+            <h2 class="folow-me">Follow Me On</h2>
+            <a href="https://www.facebook.com/profile.php?id=100063423567314"><i class="fa-brands fa-facebook icons fb"
+                style="color: #8e8e8e;" id="facebook"></i></a>
+            <a id="insta" href="https://www.instagram.com/usman.___here/?hl=en"><i
+                class="fa-brands fa-instagram icons  insta" style="color: #8e8e8e;"></i></a>
+            <a href="https://github.com/musman-js"><i class="fa-brands fa-github icons github" style="color: #8e8e8e;"
+                id="github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-usman-772296294/"><i
+                class="fa-brands fa-linkedin icons linkedin" style="color: #8e8e8e;" id="facebook"></i></a>
+          </div>
+
+          <div class="footer-icons animate__animated animate__bounceInDown">
+            <h2 class="folow-me">Get in Touch</h2>
+            <p style="margin-top: 35px;">+92 319 7344951</p>
+            <p>usman2037966@gmail.com</p>
+          </div>
+
+          <div class="footer-icons animate__animated animate__bounceInRight">
+            <h2 class="folow-me PopularTags">Popular Tags</h2>
+            <a href="#about">
+              <p class="footer-link" style="margin-top: 35px;">About</p>
+            </a>
+            <a href="#project">
+              <p class="footer-link">Portfolio</p>
+            </a>
+            <a href="#hobbies">
+              <p class="footer-link">Hobbies</p>
+            </a>
+            <a href="#skills">
+              <p class="footer-link">Skills</p>
+            </a>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div id="footer-creater">
+          <h6 class="rights text-center">@2023 All Right Reserved Made by <span class="madeby" id="creator">Muhammad
+              Usman.</span>
+          </h6> <br>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+
+  <!-- custom Js link -->
+  <script src="app.js"></script>
+  <!-- Bootstrap Js Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
