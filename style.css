@@ -31,13 +31,14 @@
 .navbar-brand {
     color: #fff;
     font-family: var(--h1-font);
-    font-weight: 900;
+    font-weight: 700;
     font-size: 24px;
 }
 
 .navbar-span {
     font-size: 19px;
     color: #67ff00;
+    font-weight: 700;
 }
 
 .navbar-brand:hover {
@@ -46,13 +47,13 @@
 
 .nav-link {
     margin-left: 49px;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-family: "Sarabun", sans-serif;
     color: #fff;
 }
 
 .contact {
-    border: 1px solid;
-    border-color: #67ff00;
+    border: 2px solid #67ff00;
     background-color: black;
     color: #fff;
 }
@@ -857,6 +858,7 @@
     transition: 0.5s;
 
 }
+
 .card-text {
     font-family: 'Lato';
     font-family: 'Poppins';
@@ -875,7 +877,8 @@
     font-weight: 600;
     transition: 0.2s;
 }
-.card-btn:hover{
+
+.card-btn:hover {
     color: #67ff00;
 }
 
@@ -894,7 +897,7 @@
 }
 
 #project:hover .card-btn {
-    color: #697682;
+    color: #fff;
 }
 
 
@@ -904,20 +907,44 @@
     padding-bottom: 40px;
 }
 
-.card-main:hover{
+#sunshine-main {
+    border: 6px solid #67ff00;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#sunshine-main:hover {
+    border: 10px solid #67ff00;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#todo-main {
+    border: 6px solid #67ff00;
+    border-left: 0;
+    border-top: 0;
+}
+
+#todo-main:hover {
+    border: 10px solid #67ff00;
+    border-left: 0;
+    border-top: 0;
+}
+
+.card-main:hover {
     background-color: #c5ff18;
 }
 
 
 .myborder {
-    /* padding-bottom: 45px; */
     border-radius: 5px;
     background-color: #111111;
 }
 
-.myborder:hover{
+.myborder:hover {
     background-color: #c5ff18;
 }
+
 
 .sec-2-project-main {
     display: flex;
@@ -939,7 +966,7 @@
 @media (max-width : 1320px) and (min-width : 991px) {
     .card-main {
         width: 420px;
-        height: 450px;
+        height: 500px;
     }
 
     .sunshine-text {
