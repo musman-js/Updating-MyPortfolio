@@ -681,7 +681,7 @@
 }
 
 .skils-image img:hover {
-    background:  linear-gradient(to right, #c5ff18, #67ff00);
+    background: linear-gradient(to right, #c5ff18, #67ff00);
 }
 
 .skils-image p {
@@ -904,7 +904,7 @@
     transition: 0.6s;
 }
 
-.card-main:hover{
+.card-main:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -935,7 +935,7 @@
 }
 
 .card-main:hover {
-    background:  linear-gradient(to right, #c5ff18, #67ff00);
+    background: linear-gradient(to right, #c5ff18, #67ff00);
 }
 
 
@@ -1135,27 +1135,112 @@
 /* **********************Contact Styling***************************** */
 
 /* =====Section 8===== */
-.message-main{
-    border: 2px solid white;
-    width: 60%;
+.contact-distribution{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-heading{
+    font-size: 18px;
+    color: #fff;
+    font-family: "Sarabun", sans-serif;
+    margin-bottom: 5px;
+}
+
+.contact-text{
+    font-size: 25px;
+    color: #fff;
+    font-family: "Sarabun", sans-serif;
+}
+
+
+.message-main {
+    border-radius: 10px;
+    width: 140%;
     padding-left: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #111111;
+    margin-bottom: 80px;
 }
 
-.contact-title{
-    font-family:"Sarabun", sans-serif;
+@media(max-width:1400px){
+    .message-main{
+        width: 100%;
+    }
+}
+
+@media(max-width:991px)and (min-width:767px){
+    .contact-distribution{
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:766px){
+    .contact-distribution{
+        display: block;
+    }
+}
+
+.contact-title {
+    font-family: "Sarabun", sans-serif;
     background: linear-gradient(90deg, #c8ff24, #52cc00);
     -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-size: 40px;
-   margin-bottom: 40px;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
-.details input{
-   width: 30%;
-   padding: 10px 7px 10px 10px;
-   border-radius: 10px;
+.details input {
+    width: 40%;
+    padding: 10px 7px 10px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    background-color: black;
+    border-color: black;
+    color: #fff;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.details input:hover{
+    border-color: #c5ff18;
+}
+
+.text-area textarea{
+    width: 83%;
+    height: 9em;
+    border-radius: 7px;
+    background-color: black;
+    border: 0;
+    padding: 10px 7px 10px 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.lastName{
+    margin-left: 13px;
+}
+
+.contact-button{
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    background: linear-gradient(to right, #c5ff18, #67ff00);
+    color: black;
+    font-weight: 600;
+    transition: 0.4s;
+    border: 0;
+}
+
+.contact-button:hover{
+    background: linear-gradient(to right, #67ff00,#c5ff18);
 }
 
 
