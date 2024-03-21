@@ -1141,23 +1141,65 @@
     align-items: center;
 }
 
-.contact-heading{
-    font-size: 18px;
-    color: #fff;
-    font-family: "Sarabun", sans-serif;
-    margin-bottom: 5px;
+
+.contact-container {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 30px; /* Adjust margin as needed */
 }
 
-.contact-text{
-    font-size: 25px;
-    color: #fff;
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust margin between items */
+}
+
+.contact-heading {
+    font-size: 16px;
+    color: #8e8e8e;
     font-family: "Sarabun", sans-serif;
+    margin-right: 10px;
+}
+
+.contact-text {
+    font-size: 23px;
+    color: #fff;
+    display: block;
+    font-family: "Sarabun", sans-serif;
+}
+
+.contact-icon {
+    width: 45px;
+    height: auto;
+    margin-right: 30px;
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+    .contact-text {
+        font-size: 18px;
+    }
+
+    .contact-icon {
+        width: 30px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-item {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        margin-left: 10px;
+    }
 }
 
 
 .message-main {
     border-radius: 10px;
-    width: 140%;
+    width: 120%;
     padding-left: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
