@@ -13,16 +13,22 @@ const app = firebase.initializeApp(firebaseConfig);
 
 
 let getValue = () => {
-  const name = document.getElementById('name');
+  const firstName = document.getElementById('firstName');
+  const lastName = document.getElementById('lastName');
   const email = document.getElementById('email');
   const message = document.getElementById('message');
+  const phoneNumber = document.getElementById('phoneNumber');
 
-  if (name.value === "") {
+  if (firstName.value === "") {
     alert('Please write name');
   }
 
   else if (email.value === "") {
     alert('Please write email');
+  }
+
+  else if(phoneNumber.value === ""){
+    alert("Please write phone Number");
   }
 
   else if (message.value === "") {
@@ -31,7 +37,9 @@ let getValue = () => {
 
   else {
     let obj = {
-      name: name.value,
+      firstName: firstName.value,
+      lastName: lastName.value,
+      phoneNumber: phoneNumber.value,
       email: email.value,
       message: message.value
     }
@@ -57,9 +65,11 @@ let getValue = () => {
     });
 
     firebase.database().ref('user-information').push(obj);
-    name.value = ""
-    email.value = ""
-    message.value = ""
+    firstName.value = "";
+    lastName.value = "";
+    phoneNumber.value = "";
+    email.value = "";
+    message.value = "";
   }
 }
 

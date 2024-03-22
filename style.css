@@ -58,7 +58,7 @@
     color: #fff;
 }
 
-.navbar-phone img{
+.navbar-phone img {
     width: 24px;
     margin-right: 8px;
 }
@@ -67,7 +67,7 @@
     .contact {
         border: none;
         background-color: #111111;
-        margin:0;
+        margin: 0;
     }
 }
 
@@ -189,7 +189,7 @@
         font-family: 'Poppins', sans-serif;
     }
 
-    .navbar-phone img{
+    .navbar-phone img {
         display: none;
     }
 
@@ -237,7 +237,8 @@
     .nav-link {
         margin-left: 10px;
     }
-    .navbar-phone img{
+
+    .navbar-phone img {
         display: none;
     }
 }
@@ -373,7 +374,7 @@
 }
 
 @media (max-width : 450px) {
-    .sec-1-main{
+    .sec-1-main {
         padding-top: 40px;
     }
 
@@ -849,8 +850,24 @@
 
 
 /* =====Section Certificates Styling======= */
-.Certificates{
-    width: 100%;
+.Certificates {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.Css {
+    margin-top: 20px;
+}
+
+@media(max-width:566px) {
+    .Certificates {
+        margin-left: 20px;
+    }
+
+    .Css {
+        margin-top: 0;
+    }
 }
 
 
@@ -1161,14 +1178,12 @@
     flex-wrap: wrap;
     align-items: center;
     margin-left: 30px;
-    /* Adjust margin as needed */
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    /* Adjust margin between items */
 }
 
 .contact-heading {
@@ -1370,7 +1385,7 @@
 
     }
 
-    .contact-title{
+    .contact-title {
         text-align: center;
     }
 
@@ -1410,19 +1425,12 @@
     text-decoration: none;
 }
 
-.line {
-    margin-left: 20px;
-    margin-right: 20px;
-    color: #67ff00;
-}
 
 .insta {
-    color: #fc1e45;
     margin-left: 25px;
 }
 
 .fb {
-    color: #1d73ca;
     margin-top: 35px;
 }
 
@@ -1435,24 +1443,14 @@
 
 .linkedin {
     margin-left: 25px;
-    color: #1d73ca;
-}
-
-
-.linkedin:hover {
-    color: #1d73ca;
-}
-
-.fb:hover {
-    color: #1d73ca;
-}
-
-.insta:hover {
-    color: #fc1e45;
 }
 
 #footer-creater {
     text-align: right;
+}
+
+.footer-link{
+    font-family: "Sarabun", sans-serif;
 }
 
 .footer-link:hover {
@@ -1490,8 +1488,8 @@
     }
 }
 
-@media(max-width:500px){
-    .rights{
+@media(max-width:500px) {
+    .rights {
         text-align: center;
     }
 }
