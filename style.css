@@ -58,10 +58,16 @@
     color: #fff;
 }
 
+.navbar-phone img{
+    width: 24px;
+    margin-right: 8px;
+}
+
 @media(max-width:991px) {
     .contact {
         border: none;
         background-color: #111111;
+        margin:0;
     }
 }
 
@@ -183,6 +189,10 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    .navbar-phone img{
+        display: none;
+    }
+
     .hireme {
         margin-top: 30px;
     }
@@ -226,6 +236,9 @@
 
     .nav-link {
         margin-left: 10px;
+    }
+    .navbar-phone img{
+        display: none;
     }
 }
 
@@ -729,15 +742,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 /* ======Section 6 About======= */
 .sec-5-icons {
     margin-left: 20px;
@@ -844,6 +848,10 @@
 }
 
 
+/* =====Section Certificates Styling======= */
+.Certificates{
+    width: 100%;
+}
 
 
 /* *******************Project Styling********************* */
@@ -1233,7 +1241,7 @@
     }
 
     .contact-icon {
-        width: 33px;
+        width: 30px;
     }
 }
 
